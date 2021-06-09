@@ -14,7 +14,7 @@ $white: #ffffff;
 .h2 {
     font-size: calc(22px + (36 - 22) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 600;
-    line-height: calc(42px + (28 - 42) * ((100vw - 320px) / (1920 - 320)));
+    line-height: calc(28px + (42 - 28) * ((100vw - 320px) / (1920 - 320)));
 }
 .h3 {
     font-size: calc(17px + (24 - 17) * ((100vw - 320px) / (1920 - 320)));
@@ -55,6 +55,7 @@ $white: #ffffff;
 //     line-height: 26px;
 // }
 .t4 {
+    font-family: 'Cormorant';
     font-size: calc(24px + (36 - 24) * ((100vw - 360px) / (1920 - 360)));
     font-style: italic;
     font-weight: 600;
