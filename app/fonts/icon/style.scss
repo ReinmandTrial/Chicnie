@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?yhqo7i');
-  src:  url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?yhqo7i#iefix') format('embedded-opentype'),
-    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?yhqo7i') format('truetype'),
-    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?yhqo7i') format('woff'),
-    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?yhqo7i##{$icomoon-font-family}') format('svg');
+  src:  url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?le7t2s');
+  src:  url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?le7t2s#iefix') format('embedded-opentype'),
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?le7t2s') format('truetype'),
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?le7t2s') format('woff'),
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?le7t2s##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -75,6 +75,41 @@
 .icon-instagram {
   &:before {
     content: $icon-instagram; 
+  }
+}
+.icon-triangle-right {
+  &:before {
+    content: $icon-triangle-right; 
+  }
+}
+.icon-triangle-left {
+  &:before {
+    content: $icon-triangle-left; 
+  }
+}
+.icon-instagram-second {
+  &:before {
+    content: $icon-instagram-second; 
+  }
+}
+.icon-quotes {
+  &:before {
+    content: $icon-quotes; 
+  }
+}
+.icon-share {
+  &:before {
+    content: $icon-share; 
+  }
+}
+.icon-message {
+  &:before {
+    content: $icon-message; 
+  }
+}
+.icon-heart {
+  &:before {
+    content: $icon-heart; 
   }
 }
 
