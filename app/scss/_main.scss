@@ -133,6 +133,7 @@
     background-position: center;
     text-align: center;
     height: 301px;
+    margin-bottom: 30px;
     &__quotes{
         font-size: 50px;
         color: $quotes;
@@ -151,6 +152,9 @@
         text-align: center;
         margin-bottom: 40px;
         color: $title;
+        .icon{
+            display: none;
+        }
     }
     &__main{
         position: relative;
@@ -236,13 +240,13 @@
         padding: 0 15px;
         height: 79px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
     }
     &__title{
         .h5{
             font-weight: 700;
         }
-        margin-right: 10px;
     }
     &__date{
         font-size: 13px;
@@ -326,9 +330,17 @@
     &__img{
         height: 334px;
         margin-bottom: 24px;
+        position: relative;
         img{
             height: 100%;
             object-fit: cover;
+        }
+        .card-tovar__sale{
+            position: absolute;
+            bottom: 6px;
+            left: 5px;
+            z-index: 2;
+            display: none;
         }
     }
     &__header{
@@ -394,6 +406,9 @@
     &__counter{
         padding-top: 2px;
         color: #6C6B6B;
+        &-mobile{
+            display: none;
+        }
     }
 }
 
@@ -404,6 +419,7 @@
         width: 50%;
         display: flex;
         align-items: center;
+        background: #F8F6F5;
     }
     &__descr-body{
         width: 519px;

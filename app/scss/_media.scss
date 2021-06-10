@@ -1,36 +1,156 @@
-// MAX-WIDTH 1600PX breakpoints START
-@media (max-width: 1600px) {
-    
-}
-
-// MAX-WIDTH 1600PX breakpoints END
-
-// MAX-WIDTH 1399.98PX breakpoints START
-@media (max-width: 1399.98px) {
-    
-}
-// MAX-WIDTH 1399.98PX breakpoints END
-
 // MAX-WIDTH 1199.98PX breakpoints START
-@media (max-width: 1199.98px) {
-  
+@media (max-width: 1139.98px) {
+  .descr{
+     height: calc(252px + (301 - 252) * ((100vw - 320px) / (1140 - 320)));
+     margin-bottom: calc(40px + (30 - 40) * ((100vw - 320px) / (1140 - 320)));
+   //  height: 301px; 252
+  }
+  .slider{
+     &__title{
+         margin-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (1140 - 320)));
+     }
+     &__item{
+         width: calc(135px + (270 - 135) * ((100vw - 320px) / (1140 - 320)));
+         &:not(:last-child) {
+            margin-right: calc(7px + (20 - 7) * ((100vw - 320px) / (1140 - 320)));
+         }
+     }
+     
+  }
+  .card-instagram{
+     &__img{
+        height: calc(135px + (270 - 135) * ((100vw - 320px) / (1140 - 320)));
+     }
+  }
+  .card-tovar{
+     &__sale{
+        display: none;
+     }
+     &__item{
+     }
+     &__img{
+        height: calc(154px + (334 - 154) * ((100vw - 320px) / (1140 - 320)));
+        .card-tovar__sale{
+           display: flex;
+        }
+     }
+  }
+  .estimation__list{
+     margin-right: 7px;
+  }
+  .slider--catalog .slider__item {
+      position: relative;
+      height: calc(465px + (545 - 465) * ((100vw - 770px) / (1140 - 770)));
+   }
+   .review{
+      &__descr-body{
+         margin-right: calc(5px + (42 - 5) * ((100vw - 770px) / (1140 - 770)));
+         margin-left: 5px;
+         padding: 5px 0;
+      }
+      &__title{
+         margin-bottom: calc(5px + (30 - 5) * ((100vw - 770px) / (1140 - 770)));
+      }
+      &__img{
+         // 486 415
+         height: calc(415px + (486 - 415) * ((100vw - 770px) / (1140 - 770)));
+         img{
+            width: unset;
+         }
+      }
+   }
 } 
 // MAX-WIDTH 1199.98PX breakpoints END
 
-// MAX-WIDTH 991.98PX breakpoints START
-@media (max-width: 991.98px) {
-   
-}
-// MAX-WIDTH 991.98PX breakpoints END
+// MAX-WIDTH 769.98PX breakpoints
+@media(max-width:769.98px){
+   .header{
+      margin-top: 135px;
+   }
+   .banner{
+      background: url('../images/banner.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      &__img{
+         display: none;
+      }
+      &__logo{
+         top: -107px;
+      }
+      &__arrow{
+         display: none;
+      }
+      &__title{
+         width: unset;
+         height: max-content;
+         margin: 0 auto;
+         background: rgba($white , .4);
+         .h1{
+            width: calc(250px + (567 - 250) * ((100vw - 320px) / (770 - 320)));
+            margin-top: -55px;
+         }
+      }
+   }
+   .slider{
+      &__item{
+         width: 50%;
+         &:nth-child(2){
+            margin-right: 0;
+         }
+      }
+      &-menu{
+         display: none;
+      }
+      &__title{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         .icon{
+            display: block;
+            font-size: 20px;
+            cursor: pointer;
+         }
+      }
+   }
+   .slider--catalog{
+      .slider__item{
+         &:nth-child(1n + 3){
+            display: none;
+         }
+      }
+      .card-tovar{
+         margin: 0 auto;
+         width: calc(135px + (209 - 135) * ((100vw - 320px) / (770 - 320)));
+      }
+      .slider__wrapper{
+         margin-bottom: 15px;
+      }
+      .slider__main{
+         padding-bottom: 35px;
+      }
+   }
+   .estimation{
+      &__list{
+         span{
+            &:not(:first-child){
+               display: none;
+            }
+         }
+      }
+      &__counter{
+         padding: 0;
 
-// MAX-WIDTH 767.98PX breakpoints START
-@media (max-width: 767.98px) {
-  
-}
-// MAX-WIDTH 767.98PX breakpoints END
-
-// MAX-WIDTH 576.98PX breakpoints START 
-@media (max-width: 575.98px) {
-   
-}
-// MAX-WIDTH 576.98PX breakpoints END 
+      }
+      &__counter-desct{
+         display: none;
+      }
+      &__counter-mobile{
+         display: flex;
+      }
+   }
+} 
+// MAX-WIDTH 769.98PX breakpoints END
