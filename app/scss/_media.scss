@@ -43,17 +43,20 @@
       height: calc(465px + (545 - 465) * ((100vw - 770px) / (1140 - 770)));
    }
    .review{
+      &__descr {
+         padding: 0px 20px;
+      }
       &__descr-body{
          margin-right: calc(5px + (42 - 5) * ((100vw - 770px) / (1140 - 770)));
          margin-left: 5px;
-         padding: 5px 0;
+         padding: 5px 0 20px;
       }
       &__title{
          margin-bottom: calc(5px + (30 - 5) * ((100vw - 320px) / (1140 - 320)));
       }
       &__img{
          // 486 415
-         height: calc(415px + (486 - 415) * ((100vw - 770px) / (1140 - 770)));
+         height: calc(471px + (486 - 471) * ((100vw - 770px) / (1140 - 770)));
          img{
             width: unset;
          }
@@ -64,6 +67,9 @@
 
 // MAX-WIDTH 769.98PX breakpoints
 @media(max-width:769.98px){
+   .container {
+      padding: 0px 20px;
+   }
    .header{
       margin-top: 135px;
    }
@@ -96,11 +102,11 @@
       }
    }
    .slider{
-      &__item{
-         width: 50%;
-         &:nth-child(2){
-            margin-right: 0;
-         }
+      &__wrapper {
+         width: max-content;
+      }
+      &__item {
+         margin-right: 20px;
       }
       &-menu{
          display: none;
@@ -116,12 +122,12 @@
          }
       }
    }
-   .slider--catalog{
-      .slider__item{
-         &:nth-child(1n + 3){
-            display: none;
-         }
+   .slider--instagram {
+      .slider__title {
+         justify-content: center;
       }
+   }
+   .slider--catalog{
       .card-tovar{
          margin: 0 auto;
          width: calc(135px + (209 - 135) * ((100vw - 320px) / (770 - 320)));
@@ -156,20 +162,17 @@
       .arrow-prev{
          left: -15px;
          padding-left: 14px;
-         .icon {
-            display: none;
-         }
       }
       .arrow-next{
          right: -15px;
          padding-right: 14px;
-         .icon {
-            display: none;
-         }
       }
       &__arrow {
          width: 30px;
          height: 30px;
+         .icon {
+            font-size: 12px;
+         }
       }
    }
    .review {
@@ -221,6 +224,11 @@
       }
       &__communication {
          margin-bottom: 25px;
+      }
+   }
+   .card-instagram {
+      &__lable {
+         display: none;
       }
    }
 } 
